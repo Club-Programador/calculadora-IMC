@@ -36,6 +36,8 @@ body {
 
 
 
+
+
 .titulo {
     margin-top: 25px;
     grid-area: titulo;
@@ -97,5 +99,18 @@ button:hover {
     font-weight: bold;
     box-shadow: 0 5px 5px 5px rgba(13, 3, 59, 0.5);
     cursor: pointer;
+}
+
+.form a img {
+    width: 50px;
+
+    padding: 10px;
+
+    margin-right:30px;
+    margin-left: 30px;
+
+    background-color: #fff;
+    border-radius: 100%;
+
 }
 
