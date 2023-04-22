@@ -18,3 +18,8 @@ input:hover{
     border-color: rgb(106, 0, 255);
     transition: .5s;
 }
+.center{
+    margin: 0 auto;
+}
+
+

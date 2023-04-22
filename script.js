@@ -18,7 +18,7 @@ function clickBtnCalcular() {
     document.write("<br>")
     document.write("<br>")
     document.write("<br>")
-    document.write('<p style="img-aling:center"><img src="https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png" alt=""></p')
+    document.write('<p ><img src="https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png" alt="" class="center"></p')
     
 
     
