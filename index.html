@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,39 @@
     <title>Document</title>
     <!-- My Styles -->
     <link href='styles.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Calculadora de Índice de masa corporal</h1><br><br>
-    <form action="" class="center">
-        <label>Peso:</label><br> <input id="txtPeso" type="text">
-        <br><br><br>
-        <label>Altura:</label><br> <input  id="txtAltura" type="text">
-        <br><br><br>
+    <section class="titulo">
+        <div><h1>Calculadora de Índice de masa corporal</h1></div>
 
-        <button id="btnCalcular">Calcular</button>
+        
 
-    </form>    <script src='script.js'></script>
+
+    </section>
+
+    <section class="form">
+
+        <form action="" class="imc-form" id="imc-form" method="POST">
+
+            <label for="txtPeso">Peso:</label>
+            <input id="txtPeso" name="txtPeso" type="text" placeholder="Ingrese su peso en Kg" required>
+    
+            <label for="txtAltura">Altura:</label>
+            <input id="txtAltura" name="txtAltura" type="text" placeholder="ingrese su estatura en Mts" required>
+    
+            <button type="submit" id="btnCalcular">Calcular</button>
+    
+        </form>
+        
+        <script src='script.js'></script>
+
+    </section>
+    
+    
 </body>
+
 </html>
