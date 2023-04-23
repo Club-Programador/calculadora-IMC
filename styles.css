@@ -1,14 +1,14 @@
-*{
-    
+* {
+
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0;
 
 }
 
 html {
     /* 1rem ahora es igual a 10px */
-    font-size: 62.5%; 
+    font-size: 62.5%;
 
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -16,45 +16,43 @@ html {
 
 body {
     display: grid;
-    grid-template-areas: 
-    "titulo"
-    "form";
+    grid-template-areas:
+        "titulo titulo"
+        "form imc";
 
     gap: 20px;
-    
+
 
     align-content: center;
     justify-content: center;
 
-    
 
-    background: rgb(174,171,226);
-    background: linear-gradient(90deg, rgba(174,171,226,1) 0%, rgba(55,82,161,1) 35%, rgba(18,49,131,1) 63%, rgba(56,109,139,0.958420868347339) 100%);
+
+    background: rgb(174, 171, 226);
+    background: linear-gradient(90deg, rgba(174, 171, 226, 1) 0%, rgba(55, 82, 161, 1) 35%, rgba(18, 49, 131, 1) 63%, rgba(56, 109, 139, 0.958420868347339) 100%);
 
 
 }
 
 
-
-
-
+/* Estilos del titulo */
 .titulo {
-    margin-top: 25px;
     grid-area: titulo;
-    text-align: center;
-    color: #ccc;
-    font-weight: bold;
+    margin-top: 25px;
     font-size: 1.5rem;
+    color: #fff;
     text-transform: uppercase;
-    
-}   
+
+}
+
+/* estilos del formulario */
 .imc-form {
     grid-area: form;
 
     display: flex;
     flex-direction: column;
 
-    
+
     margin: 0 auto;
     padding: 2rem;
     border: 1px solid #ccc;
@@ -63,7 +61,7 @@ body {
     min-width: 300px;
     max-width: 300px;
 
-    
+
 }
 
 .imc-form label {
@@ -72,7 +70,7 @@ body {
 
 }
 
-.imc-form input[type="text"]{
+.imc-form input[type="text"] {
     padding: 0.5rem;
     margin-bottom: 1rem;
     border-radius: 3px;
@@ -80,8 +78,36 @@ body {
     font-size: 1rem;
 }
 
-.imc-form
-button {
+/*  formaro barra del input */
+
+.imc-form input[type="range"] {
+    
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+
+}
+
+.imc-form input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    background: rgba(18, 49, 131, 1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* estilos del boton */
+.imc-form button {
     margin: 10px auto;
     width: 100px;
     background-color: #96085f;
@@ -93,20 +119,20 @@ button {
     cursor: pointer;
 }
 
-.imc-form
-button:hover {
-    
+.imc-form button:hover {
+
     font-weight: bold;
     box-shadow: 0 5px 5px 5px rgba(13, 3, 59, 0.5);
     cursor: pointer;
 }
 
+/* avatares hombre mujer */
 .form a img {
     width: 50px;
 
     padding: 10px;
 
-    margin-right:30px;
+    margin-right: 30px;
     margin-left: 30px;
 
     background-color: #fff;
@@ -114,3 +140,49 @@ button:hover {
 
 }
 
+/* formato de la descripcion del IMC */
+
+.imc {
+    margin-top: 10px;
+    grid-area: imc;
+    text-align: justify;
+
+
+    color: #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #007bff91;
+    min-width: 200px;
+    max-width: 200px;
+
+
+}
+
+.imc h2 {
+    font-size: 1.4rem;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+.imc p {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* estilos para formato tipo movil */
+
+@media only screen and (max-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}

@@ -15,14 +15,15 @@
 
 <body>
     <section class="titulo">
-        <div><h1>Calculadora de Índice de masa corporal</h1></div>
-
         
+
+        <div><h1>Calculadora de Índice de masa corporal</h1></div>
 
 
     </section>
 
     <section class="form">
+        
 
         
 
@@ -39,10 +40,12 @@
             </div>         
 
             <label for="txtPeso">Peso:</label>
-            <input id="txtPeso" name="txtPeso" type="text" placeholder="Ingrese su peso en Kg" required>
+            <input id="txtPeso" name="txtPeso" type="number" placeholder="Ingrese su peso en Kg" required>
+            <input type="range" id="range-Peso" name="range-Peso" min="1" max="250" value="1" placeholder="Ingrese su peso en Kg">
     
             <label for="txtAltura">Altura:</label>
-            <input id="txtAltura" name="txtAltura" type="text" placeholder="Ingrese su estatura en Mts" required>
+            <input id="txtAltura" name="txtAltura" type="number" placeholder="Ingrese su estatura en Mts" required>
+            <input type="range" id="range-Altura" name="range-Altura" min="1" max="250" value="1" placeholder="Ingrese su estatura en Mts">
     
             <button type="submit" id="btnCalcular">Calcular</button>
     
@@ -50,6 +53,17 @@
         
         <script src='script.js'></script>
 
+        
+
+    </section>
+
+    <section class="imc">
+        <div>
+            <h2>¿Cómo se mide el IMC?</h2>
+        <p>La fórmula del IMC es el peso en kilógramos dividido por el cuadrado de la altura en metros (kg/m2). El IMC es una indicación simple de la relación entre el peso y la talla que se utiliza frecuentemente para identificar el sobrepeso y la obesidad en los adultos, tanto a nivel individual como poblacional.
+        </p>
+        </div>
+        
     </section>
 
     
