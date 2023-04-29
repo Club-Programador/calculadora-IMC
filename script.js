@@ -4,6 +4,7 @@ const wInput = document.getElementById('txtPeso');
 const wRange = document.getElementById('range-Peso');
 const hInput = document.getElementById('txtAltura');
 const hRange = document.getElementById('range-Altura');
+const p = document.querySelector("#resultOp")
 
 
 wRange.addEventListener('input', () => {
@@ -19,32 +20,39 @@ hInput.addEventListener('input', () => {
     hRange.value = hInput.value;
 });
 
-
-
-
-
-function iniciar() {
-    var btnCalcular = document.getElementById("btnCalcular");
-    btnCalcular.addEventListener("click", clickBtnCalcular);
-}
-
-function clickBtnCalcular() {
+function operacion() {
+    // Cálculo del IMC
     var txtPeso = document.getElementById("txtPeso");
     var peso = txtPeso.value;
     var txtAltura = document.getElementById("txtAltura");
     var altura = txtAltura.value;
+    var imc = peso / (altura * altura);
+    p.innerText = "Su Indice de Masa Corporal es: " + imc;
+  
+    // Mostrar la imagen
+    var imgMostrar = document.getElementById("imgMostrar");
+    imgMostrar.src = "https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png";
+  
+    // Mostrar el div que contiene la imagen
+    var divImagen = document.getElementById("imagen");
+    divImagen.style.display = "block";
+  }
+  
+  function iniciar() {
+    // Ocultar la imagen al cargar la página
+    var divImagen = document.getElementById("imagen");
+    divImagen.style.display = "none";
+  
+    // Asignar el evento click al botón de calcular
+    var btnCalcular = document.querySelector("#btnCalcular");
+    btnCalcular.addEventListener("click", clickBtnCalcular);
+  }
+  
 
-    var imc = peso / (altura * altura)
-
-    document.write("Su Indice de Masa Corporal es: " + imc)
-    document.write("<br>")
-    document.write("<br>")
-    document.write("<br>")
-    document.write("<br>")
-    document.write('<p ><img src="https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png" alt="" class="center"></p')
 
 
 
 
 
-}
+
+

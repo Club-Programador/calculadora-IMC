@@ -15,64 +15,79 @@
 
 <body>
     <section class="titulo">
-        
 
-        <div><h1>Calculadora de Índice de masa corporal</h1></div>
+
+        <div>
+            <h1>Calculadora de Índice de masa corporal</h1>
+        </div>
 
 
     </section>
 
     <section class="form">
-        
 
-        
+
+
 
         <form action="" class="imc-form" id="imc-form" method="POST">
 
             <div class="caritas-container">
                 <a href="#" class="btn-sexo" id="hombre">
-                    <img src="./assets/icon/hombre.png" alt="icono hombre">
+                    <img src="https://github.com/Club-Programador/calculadora-IMC/blob/main/assets/icon/hombre.png?raw=true"
+                        alt="icono hombre">
                 </a>
                 <a href="#" class="btn-sexo" id="mujer">
-                    <img src="./assets/icon/mujer.png" alt="icono mujer">
+                    <img src="https://github.com/Club-Programador/calculadora-IMC/blob/main/assets/icon/mujer.png?raw=true"
+                        alt="icono mujer">
                 </a>
 
-            </div>         
+            </div>
 
             <label for="txtPeso">Peso:</label>
             <input id="txtPeso" name="txtPeso" type="number" placeholder="Ingrese su peso en Kg" required>
-            <input type="range" id="range-Peso" name="range-Peso" min="1" max="250" value="1" placeholder="Ingrese su peso en Kg">
-    
+            <input type="range" id="range-Peso" name="range-Peso" min="1" max="250" value="1"
+                placeholder="Ingrese su peso en Kg">
+
             <label for="txtAltura">Altura:</label>
             <input id="txtAltura" name="txtAltura" type="number" placeholder="Ingrese su estatura en Mts" required>
-            <input type="range" id="range-Altura" name="range-Altura" min="1" max="250" value="1" placeholder="Ingrese su estatura en Mts">
-    
-            <button type="submit" id="btnCalcular">Calcular</button>
-            
-            
-    
+            <input type="range" id="range-Altura" name="range-Altura" min="1" max="250" value="1"
+                placeholder="Ingrese su estatura en Mts">
+
+            <button type="submit" id="btnCalcular" onclick="operacion()">Calcular</button>
+            <p id="resultOp"></p>
+
+
+
         </form>
-        
-        <script src='script.js'></script>
 
-        
 
-        
+
+
+
 
     </section>
+    <div id="imagen">
+        <img id="imgMostrar" src="https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png" class="imagen">
+      </div>
+      
+    
 
     <section class="imc">
         <div>
             <h2>¿Cómo se mide el IMC?</h2>
-        <p>La fórmula del IMC es el peso en kilógramos dividido por el cuadrado de la altura en metros (kg/m2). El IMC es una indicación simple de la relación entre el peso y la talla que se utiliza frecuentemente para identificar el sobrepeso y la obesidad en los adultos, tanto a nivel individual como poblacional.
-        </p>
-        <p id="resulatado"></p>
-        </div>
-        
-    </section>
+            <p>La fórmula del IMC es el peso en kilógramos dividido por el cuadrado de la altura en metros (kg/m2). El
+                IMC es una indicación simple de la relación entre el peso y la talla que se utiliza frecuentemente para
+                identificar el sobrepeso y la obesidad en los adultos, tanto a nivel individual como poblacional.
+            </p>
 
-    
-    
+        </div>
+       
+
+    </section>
+    <script src='script.js'></script>
+
+
+
 </body>
 
 </html>

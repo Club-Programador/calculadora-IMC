@@ -77,6 +77,18 @@ body {
     border: 1px solid #0e0246;
     font-size: 1rem;
 }
+/* estilos de la imagen */
+.imagen{
+    position: relative;
+  
+    height: 250px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width: 300px;
+    max-width: 300px;
+}
+
 
 /*  formaro barra del input */
 
@@ -123,9 +135,17 @@ body {
 
     font-weight: bold;
     box-shadow: 0 5px 5px 5px rgba(13, 3, 59, 0.5);
+    transition: .2s;
     cursor: pointer;
 }
+.imc-form button:focus {
+    background-color: #e30990;
 
+    font-weight: bold;
+    box-shadow: 0 5px 5px 5px rgba(13, 3, 59, 0.5);
+    transition: .1s;
+    cursor: pointer;
+}
 /* avatares hombre mujer */
 .form a img {
     width: 50px;
