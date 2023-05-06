@@ -1,4 +1,4 @@
-window.onload = iniciar;
+iniciar()
 
 const wInput = document.getElementById("txtPeso");
 const wRange = document.getElementById("range-Peso");
@@ -22,11 +22,11 @@ hInput.addEventListener("input", () => {
 function operacion() {
   // Cálculo del IMC
   var txtPeso = document.getElementById("txtPeso");
-  var peso = txtPeso.value;
+  var peso = parseFloat(txtPeso.value);
   var txtAltura = document.getElementById("txtAltura");
-  var altura = txtAltura.value;
+  var altura = parseFloat(txtAltura.value);
   var imc = peso / (altura * altura);
-  p.innerText = "Su Indice de Masa Corporal es: " + imc;
+  p.innerText = "Su Indice de Masa Corporal es: " + imc.toFixed(2);
 
   // Mostrar la imagen
   var imgMostrar = document.getElementById("imgMostrar");
@@ -45,5 +45,10 @@ function iniciar() {
 
   // Asignar el evento click al botón de calcular
   var btnCalcular = document.querySelector("#btnCalcular");
-  btnCalcular.addEventListener("click", btnCalcular);
+  btnCalcular.type = "button"; // Cambiar el tipo del botón
+  btnCalcular.addEventListener("click", function(event) {
+    event.preventDefault(); // Cancelar la acción predeterminada
+    operacion();
+  });
 }
+
