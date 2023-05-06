@@ -43,6 +43,8 @@ function iniciar() {
   var divImagen = document.getElementById("imagen");
   divImagen.style.display = "none";
 
+  
+
   // Asignar el evento click al botón de calcular
   var btnCalcular = document.querySelector("#btnCalcular");
   btnCalcular.type = "button"; // Cambiar el tipo del botón
