@@ -33,7 +33,7 @@ function operacion() {
   imgMostrar.src =
     "https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png";
 
-  // Mostrar el div que contiene la imagen
+  // Mostrar el div que contiene la image
   var divImagen = document.getElementById("imagen");
   divImagen.style.display = "block";
 }
