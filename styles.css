@@ -15,7 +15,8 @@ body {
   display: grid;
   grid-template-areas:
     "titulo titulo"
-    "form imc";
+    "form imc"
+    "hombre-mujer imagen";
   gap: 20px;
   align-content: center;
   justify-content: center;
@@ -65,6 +66,7 @@ body {
   font-size: 1rem;
 }
 /* estilos de la imagen */
+
 .imagen {
   position: relative;
   height: 250px;
@@ -163,6 +165,26 @@ body {
 .imc p {
   margin-top: 20px;
   font-size: 1.1rem;
+}
+.hombre-mujer {
+  grid-area: hombre-mujer;
+  margin-top: 10px;
+  
+  text-align: justify;
+  color: #fff;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #007bff91;
+  height: fit-content;
+
+}
+.hombre-mujer img {
+  height: 50px;
+}
+#imagen {
+  grid-area: imagen;
 }
 
 /* estilos para formato tipo movil */
