@@ -1,0 +1,12 @@
+cfix & Changes + Favicon
+Fix mostrar resultado cuando no habian peso ni altura
+Modify script:
+- Renombre las variables por convencion y las hice mas consistentes.
+- Simplifique el script.
+- Modifique su  funcionamiento para que oculte la parte del calculo y muestre el resultado usando toggle con la clase hidden.
+Modify HTML:
+- Elimine las propiedades que no cunplian ningun proposito como el name y el target de los labels.
+- Removed Form.
+- Agrupe la imagen con el resultado para que se oculte y muestren a la vez.
+Modify CSS:
+- Added Style Hidden.

@@ -2,7 +2,7 @@
 ## TODO:
 
 - Mostrar distintas paginas dependiendo del resultado.
-- Corregir error tirado por el campo (Altura) --->Gf (contactarse por email)
+
 
 ## Info:
 

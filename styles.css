@@ -184,3 +184,8 @@ body {
 .hidden {
   display: none;
 }
+
+.container-resultados {
+  display: flex;
+  justify-content: space-between;
+}
