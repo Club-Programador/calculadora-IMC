@@ -43,12 +43,12 @@ function iniciar() {
   var divImagen = document.getElementById("imagen");
   divImagen.style.display = "none";
 
-  
+
 
   // Asignar el evento click al botón de calcular
   var btnCalcular = document.querySelector("#btnCalcular");
   btnCalcular.type = "button"; // Cambiar el tipo del botón
-  btnCalcular.addEventListener("click", function(event) {
+  btnCalcular.addEventListener("click", function (event) {
     event.preventDefault(); // Cancelar la acción predeterminada
     operacion();
   });
