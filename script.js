@@ -9,7 +9,7 @@ function displayResultado() {
   // Cálculo del IMC
   var peso = parseFloat(PESO_TEXT.value);
   var altura = parseFloat(ALTURA_TEXT.value);
-  var imc = peso / (altura * altura);
+  var imc = peso / ((altura * altura) / 100);
   RESULTADO.innerText = `\n${imc.toFixed(2)}`;
 
   document.querySelector(".resultado-imc").classList.toggle("hidden")
