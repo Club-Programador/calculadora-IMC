@@ -37,7 +37,7 @@ body {
 }
 
 /* estilos del formulario */
-.imc-form {
+.calculadora-imc {
   grid-area: form;
   display: flex;
   flex-direction: column;
@@ -50,12 +50,12 @@ body {
   max-width: 300px;
 }
 
-.imc-form label {
+.calculadora-imc label {
   font-size: 1.2rem;
   color: #ccc;
 }
 
-.imc-form input[type="text"] {
+.calculadora-imc input[type="text"] {
   padding: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 3px;
@@ -76,7 +76,7 @@ body {
 
 /*  formaro barra del input */
 
-.imc-form input[type="range"] {
+.calculadora-imc input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
@@ -88,7 +88,7 @@ body {
   margin-bottom: 10px;
 }
 
-.imc-form input[type="range"]::-webkit-slider-thumb {
+.calculadora-imc input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
@@ -100,7 +100,7 @@ body {
 }
 
 /* estilos del boton */
-.imc-form button {
+.calculadora-imc button {
   margin: 10px auto;
   width: 100px;
   background-color: #96085f;
@@ -112,30 +112,19 @@ body {
   cursor: pointer;
 }
 
-.imc-form button:hover {
+.calculadora-imc button:hover {
   font-weight: bold;
   box-shadow: 0 5px 5px 5px rgba(13, 3, 59, 0.5);
   transition: 0.2s;
   cursor: pointer;
 }
 
-.imc-form button:focus {
+.calculadora-imc button:focus {
   background-color: #e30990;
   font-weight: bold;
   box-shadow: 0 5px 5px 5px rgba(13, 3, 59, 0.5);
   transition: 0.1s;
   cursor: pointer;
-}
-
-/* avatares hombre mujer */
-
-.form a img {
-  width: 50px;
-  padding: 10px;
-  margin-right: 30px;
-  margin-left: 30px;
-  background-color: #fff;
-  border-radius: 100%;
 }
 
 /* formato de la descripcion del IMC */
@@ -169,18 +158,18 @@ body {
   font-size: 2rem;
 }
 
-#resultOp {
+#paragraph-resultado {
   margin-top: 10px;
   grid-area: imc;
   text-align: justify;
   color: #fff;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 10px auto;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #007bff91;
   min-width: 200px;
   max-width: 200px;
+  text-align: center;
 }
 
 /* estilos para formato tipo movil */
@@ -190,4 +179,8 @@ body {
     display: flex;
     flex-direction: column;
   }
+}
+
+.hidden {
+  display: none;
 }

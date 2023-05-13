@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="1683984622.ico">
   <title>Calculadora IMC</title>
   <!-- My Styles -->
   <link rel="icon" href="https://iconos8.es/icon/65859/balanza" type="image/x-icon">
@@ -21,32 +22,21 @@
     </div>
   </section>
 
-  <section class="form">
-    <form action="" class="imc-form" id="imc-form" method="POST">
+  <section class="calculadora-imc">
+    <label>Peso:</label>
+    <input id="input-peso-text" type="text" min="1" max="250" step="0.01" required
+      placeholder="Ingrese su peso en Kg" />
+    <input id="input-peso-range" type="range" min="1" max="250" step="0.01" value="1"
+      placeholder="Ingrese su peso en Kg" />
 
+    <label>Altura:</label>
+    <input id="input-altura-text" type="text" step="0.01" placeholder="Ingrese su estatura en metros" required />
+    <input id="input-altura-range" type="range" min="1" max="2.0" step="0.01" value="1"
+      placeholder="Ingrese su estatura en metros" />
 
-      <label for="txtPeso">Peso:</label>
-      <input id="txtPeso" name="txtPeso" type="text" min="1" max="250" step="0.01" placeholder="Ingrese su peso en Kg"
-        required />
-      <input type="range" id="range-Peso" name="range-Peso" min="1" max="250" step="0.01" value="1"
-        placeholder="Ingrese su peso en Kg" />
-
-      <label for="txtAltura">Altura:</label>
-      <input id="txtAltura" name="txtAltura" type="text" step="0.01" placeholder="Ingrese su estatura en metros"
-        required />
-      <input type="range" id="range-Altura" name="range-Altura" min="1" max="2.0" step="0.01" value="1"
-        placeholder="Ingrese su estatura en metros" />
-
-      <button type="submit" id="btnCalcular" onclick="operacion()">
-        Calcular
-      </button>
-
-    </form>
+    <button id="btn-calcular">Calcular</button>
   </section>
-  <div id="imagen">
-    <img id="imgMostrar" src="https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png"
-      class="imagen" alt="imgMostrar" />
-  </div>
+
 
   <section class="imc">
     <div>
@@ -61,27 +51,15 @@
     </div>
   </section>
 
-  <section class="resultado-imc">
-    <p id="resultOp">Su resultado es:</p>
+  <section class="resultado-imc hidden">
+    <p id="paragraph-resultado">Su resultado es: <span id="resultado"></span></p>
+    <div id="imagen">
+      <img id="imgMostrar"
+        src="https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png" class="imagen"
+        alt="imgMostrar" />
+    </div>
   </section>
 
-  <!-- iconos de hombre y mujer -->
-  <!-- <section class="hombre-mujer">
-      <div class="caritas-container">
-        <a href="#" class="btn-sexo" id="hombre">
-          <img
-            src="https://github.com/Club-Programador/calculadora-IMC/blob/main/assets/icon/hombre.png?raw=true"
-            alt="icono hombre"
-          />
-        </a>
-        <a href="#" class="btn-sexo" id="mujer">
-          <img
-            src="https://github.com/Club-Programador/calculadora-IMC/blob/main/assets/icon/mujer.png?raw=true"
-            alt="icono mujer"
-          />
-        </a>
-      </div> 
-    </section>-->
   <script src="script.js"></script>
 </body>
 
