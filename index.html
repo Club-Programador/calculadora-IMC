@@ -22,12 +22,12 @@
     </div>
   </section>
 
-  <section class="calculadora-imc">
+  <section class="calculadora-imc contenedor-sections">
     <label>Peso:</label>
     <input id="input-peso-text" type="text" min="1" max="250" step="0.01" required
       placeholder="Ingrese su peso en Kg" />
     <input id="input-peso-range" type="range" min="1" max="250" step="0.01" value="1">
-
+    <br><br>
     <label>Altura:</label>
     <input id="input-altura-text" type="text" step="1" placeholder="Ingrese su estatura en centimetros" required />
     <input id="input-altura-range" type="range" min="1" max="3000" step="1" value="1" />
@@ -36,7 +36,7 @@
   </section>
 
 
-  <section class="imc">
+  <section class="imc contenedor-sections">
     <div>
       <h2>¿Cómo se mide el IMC?</h2>
       <p>
@@ -50,15 +50,14 @@
   </section>
 
   <section class="resultado-imc hidden">
-    <p id="paragraph-resultado">Su resultado es: <span id="resultado"></span></p>
     <div class="container-resultados">
-      <div id="resultado-bajo-peso">-</div>
-      <div id="resultado-normal">-</div>
-      <div id="resultado-sobrepeso">-</div>
-      <div id="resultado-obesidad">-</div>
-    </div>
-    <p id="descipcion-resultado"></p>
-    <div id="imagen">
+      <div id="resultado-bajo-peso" class=" contenedor-sections">-</div>
+      <div id="resultado-normal" class=" contenedor-sections">-</div>
+      <div id="resultado-sobrepeso" class=" contenedor-sections">-</div>
+      <div id="resultado-obesidad" class=" contenedor-sections">-</div>
+    </div><br>
+    <p id="descipcion-resultado" class="contenedor-sections"></p><br>
+    <div id="imagen"><br>
       <img id="imgMostrar"
         src="https://www.doctorjosevicenteferrer.com/wp-content/uploads/2013/10/tabla-IMC-624x411.png" class="imagen"
         alt="imgMostrar" />
