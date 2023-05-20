@@ -12,5 +12,5 @@ Trello: https://trello.com/w/proyectoclubprogramadoraws
 
 ## Misc:
 
-URL LiveShare: https://prod.liveshare.vsengsaas.visualstudio.com/join?334D8C37A3618AFD16EB7FC60DD71B2ABB58
+URL LiveShare: https://prod.liveshare.vsengsaas.visualstudio.com/join?9BA938FAE805B1DF2605225C560F07C9E91C
 
