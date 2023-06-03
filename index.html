@@ -30,11 +30,39 @@
     <br><br>
     <label>Altura:</label>
     <input id="input-altura-text" type="text" step="1" placeholder="Ingrese su estatura en centimetros" required />
-    <input id="input-altura-range" type="range" min="1" max="3000" step="1" value="1" />
+    <input id="input-altura-range" type="range" min="1" max="300" step="1" value="1" />
 
     <button id="btn-calcular">Calcular</button>
   </section>
 
+  <section class="resultado contenedor-sections hidden">
+    <div id="resultado-imc">
+    </div>
+    <div class="container-flechas">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path id="flecha-bajo-peso" class="transparent"
+          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path id="flecha-saludable" class="transparent"
+          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path id="flecha-sobrepeso" class="transparent"
+          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path id="flecha-obesidad" class="transparent"
+          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+      </svg>
+    </div>
+    <img class="imc-bar" src="./assets/imc-bar.png"><br>
+    <p id="descipcion-resultado"></p><br>
+  </section>
 
   <section class="imc contenedor-sections">
     <div>
@@ -47,39 +75,6 @@
         individual como poblacional.
       </p>
     </div>
-  </section>
-
-  <section class="resultado-imc hidden">
-    <div class="container-resultados">
-      <div id="resultado-bajo-peso" class=" contenedor-sections">-</div>
-      <div id="resultado-normal" class=" contenedor-sections">-</div>
-      <div id="resultado-sobrepeso" class=" contenedor-sections">-</div>
-      <div id="resultado-obesidad" class=" contenedor-sections">-</div>
-    </div><br>
-    <div class="container-flechas">
-      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-        <path id="flecha-bajo-peso"
-          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-        <path id="flecha-normal"
-          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-        <path id="flecha-sobrepeso"
-          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-        viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-        <path id="flecha-obesidad"
-          d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-      </svg>
-    </div><br>
-    <img class="imagen" src="./assets/bmi-bar.png"><br>
-    <p id="descipcion-resultado" class="contenedor-sections"></p><br>
   </section>
 
   <script src="script.js"></script>
