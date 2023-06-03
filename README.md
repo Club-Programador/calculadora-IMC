@@ -1,6 +1,5 @@
 
 ## TODO:
-- Unificar Branchs.
 - Añadir Imagen con los rangos de resultado.
 - Hacer Responsive la Pagina.
 
