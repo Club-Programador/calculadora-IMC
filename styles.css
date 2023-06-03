@@ -70,12 +70,14 @@ body {
 /* estilos de la imagen */
 .imagen {
   position: relative;
-  height: 250px;
   width: 400px;
   border-radius: 5px;
   border: 1px solid #ccc;
   min-width: 300px;
   max-width: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #007bff91;
 }
 
 /*  formaro barra del input */
@@ -178,6 +180,13 @@ body {
   margin-top: 10px;
 }
 
+.container-flechas {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
 #descipcion-resultado {
   color: white;
   margin-top: 10px;
@@ -186,4 +195,16 @@ body {
   margin: 0 auto;
   min-width: 200px;
   max-width: 300px;
+}
+
+
+
+svg path {
+  /* select the paths */
+  fill: #ffffff;
+  opacity: 0%;
+}
+
+.mostrar_flecha {
+  opacity: 100%;
 }

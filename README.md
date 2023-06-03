@@ -16,7 +16,9 @@ Trello: https://trello.com/w/proyectoclubprogramadoraws
 - Se remplazo la forma original de mostrar el resultado imc por hacer que aparezca en su respectiva casilla (div).
 - Se añadio que aparezca la descripcion del resultado imc.
 - Se Añadio separacion con br entre los input Peso y Altura.
-
+#### 03/06/23
+- Remplazamos imagen original por la de los rangos de resultado.
+- Añadimos flechas que indica el rango del resultado.
 ## Misc:
 
 URL LiveShare: https://prod.liveshare.vsengsaas.visualstudio.com/join?9BA938FAE805B1DF2605225C560F07C9E91C

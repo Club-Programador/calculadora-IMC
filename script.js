@@ -12,7 +12,10 @@ const ESPACIO_BAJO_PESO = document.getElementById("resultado-bajo-peso");
 const ESPACIO_SALUDABLE = document.getElementById("resultado-saludable");
 const ESPACIO_SOBREPESO = document.getElementById("resultado-sobrepeso");
 const ESPACIO_OBESIDAD = document.getElementById("resultado-obesidad");
-
+const FLECHA_BAJO_PESO = document.getElementById("flecha-bajo-peso");
+const FLECHA_SALUDABLE = document.getElementById("flecha-saludable");
+const FLECHA_SOBREPESO = document.getElementById("flecha-sobrepeso");
+const FLECHA_OBESIDAD = document.getElementById("flecha-obesidad");
 function displayResultado() {
   // Cálculo del IMC
   var peso = parseFloat(PESO_TEXT.value);
@@ -23,15 +26,19 @@ function displayResultado() {
   if (imc < 18.5) {
     ESPACIO_BAJO_PESO.innerHTML = imc;
     PARAGRAPH_DESCRIPCION.textContent = DESCRIPCION_BAJO_PESO;
+    FLECHA_BAJO_PESO.classList.add("mostrar_flecha")
   } else if (imc >= 18.5 && imc <= 24.9) {
     ESPACIO_SALUDABLE.innerHTML = imc;
     PARAGRAPH_DESCRIPCION.textContent = DESCRIPCION_SALUDABLE;
+    FLECHA_SALUDABLE.classList.add("mostrar_flecha")
   } else if (imc >= 25.0 && imc <= 29.9) {
     ESPACIO_SOBREPESO.innerHTML = imc;
     PARAGRAPH_DESCRIPCION.textContent = DESCRIPCION_SOBREPESO;
+    FLECHA_SOBREPESO.classList.add("mostrar_flecha")
   } else if (imc > 29.9) {
     ESPACIO_OBESIDAD.innerHTML = imc;
     PARAGRAPH_DESCRIPCION.textContent = DESCRIPCION_OBESIDAD;
+    FLECHA_OBESIDAD.classList.add("mostrar_flecha")
   }
 
 
