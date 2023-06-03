@@ -19,7 +19,3 @@ Trello: https://trello.com/w/proyectoclubprogramadoraws
 #### 03/06/23
 - Remplazamos imagen original por la de los rangos de resultado.
 - Añadimos flechas que indica el rango del resultado.
-## Misc:
-
-URL LiveShare: https://prod.liveshare.vsengsaas.visualstudio.com/join?9BA938FAE805B1DF2605225C560F07C9E91C
-
